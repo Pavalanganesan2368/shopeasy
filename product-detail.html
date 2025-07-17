@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Name - ShopEasy</title>
+    <!-- CSS STYLE SHEETS -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar Starts -->
+     <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">ShopEasy</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+     </nav>
+    <!-- Navigation Bar Ends -->
+
+    <!-- Product Detail Section Starts -->
+     <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-container">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="./images/headphones.jpg" alt="Product Name" id="main-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="./images/headphones.jpg" alt="Thumbnail 1">
+                        <img src="./images/headphones.jpg" alt="Thumbnail 2">
+                        <img src="./images/headphones.jpg" alt="Thumbnail 3">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h1 id="product-title">Wireless Headphone</h1>
+                    <div class="product-meta">
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(42 Reviews)</span>
+                        </span>
+                        <span class="product-stock in-stock">In Stock</span>
+                    </div>
+
+                    <div class="product-price" id="product-price">$99.99</div>
+                    <div class="product-description">
+                        <p>High-quanlity wireless headphones with noise cancellation. Perfect for music lovers and professional who need to focus. Features include 30-hour battery life, Bluetooth 5.0, and comfortable over-ear design.</p>
+                        <ul>
+                            <li>Active Noise Cancellation.</li>
+                            <li>30-hour battery life.</li>
+                            <li>Bluetooth 5.0.</li>
+                            <li>Built-in microphone.</li>
+                            <li>Foldable Design.</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" id="quantity">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+
+                        <button class="btn add-to-cart" id="add-to-cart">Add to Cart</button>
+                        <button class="btn wishlist-btn">
+                            <i class="far fa-heart"></i>Wishlist
+                        </button>
+                    </div>
+
+                    <div class="product-details">
+                        <h3>Details</h3>
+                            <table>
+                                <tr>
+                                    <td>Brand</td>
+                                    <td>AudioPro</td>
+                                </tr>
+                                <tr>
+                                    <td>Model</td>
+                                    <td>AP-3000</td>
+                                </tr>
+                                <tr>
+                                    <td>Color</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td>Weight</td>
+                                    <td>0.5 lbs</td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs Starts -->
+             <div class="product-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description"></button>
+                    <button class="tab-btn" data-tab="reviews"></button>
+                    <button class="tab-btn" data-tab="shipping"></button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-panel active" id="description">
+                        <h3>Product Description</h3>
+                        <p>Our premier wireless headphones deliver exceptional sound quanlity with active noise cancellation technology. The ergonomic design ensures comfort even during extended use, while the 30-hour battery life means you can enjoy yor music all day long.</p>
+                        <p>The build-in microphone allows for clear hands-free calls, and the intutive touch controls make it easy to manage your music and calls without reaching for your devices.</p>
+                    </div>
+
+                    <div class="tab-panel" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="review-author">John D.</span>
+                                <span class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+
+                            <div class="review-content">
+                                <p>These Headphone are amazing! The noise cancellation works perfectly on my daily commute.</p>
+                            </div>
+                        </div>
+
+                        <div class="tab-panel" id="shipping">
+                            <h3>Shipping Infomation</h3>
+                            <p>We offer free standard shipping on all orders over $50. Orders are typically processed within 1-2 business days and delivered within 3-5 business days.</p>
+                            <h3>Returns Policy</h3>
+                            <p>We offer a 30-day return policy. Items must be in original condition with all packaging. Please contact our customer service to initiate a return.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="related-products">
+                    <h2>You May Also Like</h2>
+                    <div class="products-grid" id="related-products">
+
+                    </div>
+                </div>
+            </div>
+            <!-- Product Tabs Ends -->
+        </div>
+    </section>
+    <!-- Product Detail Section Ends -->
+
+    <!-- Footer Starts -->
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>ShopEasy</h3>
+                <p>Your one-stop shop for all your needs.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#"></a>About us</li>
+                    <li><a href="#"></a>Contact</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@shopeasy.com</p>  
+                <p>Phone: (123) 456-7890</p>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 ShopEasy. All rights reserved.</p>
+            </div>
+        </div>
+     </footer>
+    <!-- Footer Ends -->
+
+    <script src="./js/script.js"></script>
+    <script src="./js/product-detail.js"></script>
+
+</body>
+</html>

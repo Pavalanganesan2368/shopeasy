@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - ShopEasy</title>
+    <!-- CSS Style Sheets -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar Starts -->
+     <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">ShopEasy</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+     </nav>
+    <!-- Navigation Bar Ends -->
+
+    <!-- Product Section Starts -->
+     <section class="products-section">
+        <div class="container">
+            <div class="products-header">
+                <h2>All Products</h2>
+                <div class="sort-filter">
+                    <label for="sort">Sort by :</label>
+                    <select id="sort">
+                        <option value="default">Default</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name-asc">Name: A-Z</option>
+                        <option value="name-desc">Name: Z-A</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-container">
+                <aside class="product-sidebar">
+                    <h3>Filters</h3>
+                    <div class="filter-group">
+                        <h4>Categories</h4>
+                        <div class="filter-option">
+                            <input type="checkbox" id="electronics" value="electronics" checked>
+                            <label for="electronics">Electronics</label>
+                        </div>
+
+                        <div class="filter-option">
+                            <input type="checkbox" id="fashion" value="fashion" checked>
+                            <label for="fashion">Fashion</label>
+                        </div>
+
+                        <div class="filter-option">
+                            <input type="checkbox" id="home" value="home" checked>
+                            <label for="home">Home</label>
+                        </div>
+
+                        <div class="filter-option">
+                            <input type="checkbox" id="sports" value="sports" checked>
+                            <label for="sports">Sports</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <div class="price-range">
+                            <input type="range" id="price-slider">
+                            <div class="price-values">
+                                <span>$0</span>
+                                <span id="max-price">$200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn apply-filters">Apply Filters</button>
+                </aside>
+
+                <div class="products-grid" id="all-products">
+                    
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Product Section Ends -->
+
+    <!-- Footer Starts -->
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>ShopEasy</h3>
+                <p>Your one-stop shop for all your needs.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#"></a>About us</li>
+                    <li><a href="#"></a>Contact</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@shopeasy.com</p>  
+                <p>Phone: (123) 456-7890</p>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 ShopEasy. All rights reserved.</p>
+            </div>
+        </div>
+     </footer>
+    <!-- Footer Ends -->
+    <script src="./js/script.js"></script>
+    <script src="./js/products.js"></script>
+</body>
+</html>
